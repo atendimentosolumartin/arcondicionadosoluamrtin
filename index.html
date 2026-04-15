@@ -3,9 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- FORÇAR ATUALIZAÇÃO -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
 <title>Ar Condicionado Solumartin | Caxias do Sul</title>
 
-<meta name="description" content="Instalação, higienização e venda de ar-condicionado em Caxias do Sul e região. Atendimento profissional via WhatsApp.">
+<meta name="description" content="Instalação, higienização, manutenção, PMOC e venda de ar-condicionado em Caxias do Sul e região.">
 
 <style>
 body {
@@ -23,12 +29,10 @@ header {
 
 header img {
     max-width: 260px;
-    margin-bottom: 10px;
 }
 
 header p {
     color: white;
-    margin: 5px 0 0;
 }
 
 .hero {
@@ -36,16 +40,6 @@ header p {
     color: white;
     padding: 50px 20px;
     text-align: center;
-}
-
-.hero h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
 }
 
 .cta {
@@ -56,10 +50,6 @@ header p {
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-}
-
-.cta:hover {
-    background: #ea580c;
 }
 
 .section {
@@ -88,18 +78,38 @@ header p {
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
-.card h3 {
-    color: #0a3d62;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 15px;
-    margin-bottom: 10px;
-}
-
 .highlight {
     color: #16a34a;
+    font-weight: bold;
+}
+
+/* PMOC */
+.pmoc {
+    background: linear-gradient(to right, #0a3d62, #0f5fa3);
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    padding: 40px 20px;
+}
+
+/* TÍTULO PMOC AJUSTADO */
+.pmoc h2 {
+    color: #000000;
+    font-weight: 800;
+    background: #ffffff;
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.warning {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 700px;
     font-weight: bold;
 }
 
@@ -108,12 +118,9 @@ footer {
     color: white;
     text-align: center;
     padding: 25px;
-    font-size: 14px;
 }
 
-/* ================================
-   BOTÕES FLUTUANTES
-================================ */
+/* BOTÕES FLUTUANTES */
 
 .whatsapp-float {
     position: fixed;
@@ -123,10 +130,8 @@ footer {
     color: white;
     padding: 14px 18px;
     border-radius: 50px;
-    font-weight: bold;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-    z-index: 1000;
+    font-weight: bold;
 }
 
 .instagram-float {
@@ -137,50 +142,8 @@ footer {
     color: white;
     padding: 14px 18px;
     border-radius: 50px;
-    font-weight: bold;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-    z-index: 1000;
-}
-
-/* ================================
-   ANIMAÇÕES
-================================ */
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
-        transform: scale(1);
-    }
-    70% {
-        box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
-        transform: scale(1.05);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-        transform: scale(1);
-    }
-}
-
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
-    100% { transform: translateY(0); }
-}
-
-/* Aplicação das animações */
-.whatsapp-float {
-    animation: pulse 2.5s infinite, float 4s ease-in-out infinite;
-}
-
-.instagram-float {
-    animation: float 4s ease-in-out infinite;
-}
-
-.whatsapp-float:hover,
-.instagram-float:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
+    font-weight: bold;
 }
 </style>
 </head>
@@ -188,15 +151,15 @@ footer {
 <body>
 
 <header>
-    <img src="logo.png" alt="Solumartin">
-    <p>Instalação • Higienização • Venda de Ar-Condicionado</p>
+    <img src="logo.png">
+    <p>Instalação • Higienização • Manutenção • PMOC • Venda</p>
 </header>
 
 <section class="hero">
     <h1>Ar-Condicionado em Caxias do Sul</h1>
     <p>Atendimento profissional para residências e empresas</p>
     <a class="cta" href="https://wa.me/5554991674077" target="_blank">
-        Solicitar orçamento no WhatsApp
+        Solicitar orçamento
     </a>
 </section>
 
@@ -205,31 +168,67 @@ footer {
     <div class="cards">
 
         <div class="card">
-            <h3>Instalação de Ar-Condicionado</h3>
-            <p>Instalação segura, eficiente e dentro das normas técnicas.</p>
-            <p class="highlight">Mais conforto e durabilidade</p>
+            <h3>Instalação</h3>
+            <p>Instalação profissional e segura.</p>
+            <p class="highlight">Mais eficiência</p>
             <a class="cta" href="https://wa.me/5554991674077" target="_blank">
-               Solicitar instalação
+                Solicitar instalação
             </a>
         </div>
 
         <div class="card">
-            <h3>Higienização Completa</h3>
-            <p>Melhora a qualidade do ar e reduz o consumo de energia.</p>
-            <p class="highlight">Mais saúde para sua família</p>
+            <h3>Higienização</h3>
+            <p>Melhora a qualidade do ar.</p>
+            <p class="highlight">Mais saúde</p>
             <a class="cta" href="https://wa.me/5554991674077" target="_blank">
-               Agendar higienização
+                Agendar higienização
             </a>
         </div>
 
         <div class="card">
-            <h3>Venda de Ar-Condicionado</h3>
-            <p>Modelos Split e Inverter para todos os ambientes.</p>
-            <p class="highlight">Economia e tecnologia</p>
+            <h3>Manutenção</h3>
+            <p>Manutenção preventiva e corretiva do equipamento.</p>
+            <p class="highlight">Mais segurança e durabilidade</p>
             <a class="cta" href="https://wa.me/5554991674077" target="_blank">
-               Ver modelos disponíveis
+                Solicitar manutenção
             </a>
         </div>
+
+        <div class="card">
+            <h3>Venda</h3>
+            <p>Equipamentos modernos e econômicos.</p>
+            <p class="highlight">Mais economia</p>
+            <a class="cta" href="https://wa.me/5554991674077" target="_blank">
+                Ver modelos
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- SEÇÃO PMOC -->
+<section class="section">
+    <div class="pmoc">
+
+        <h2>PMOC – Obrigatório por Lei</h2>
+
+        <p>
+            Empresas com sistemas de ar-condicionado são obrigadas a manter
+            o PMOC conforme normas da ANVISA (Lei 13.589/2018).
+        </p>
+
+        <p>
+            A Solumartin realiza implantação completa, manutenção e controle
+            do PMOC para sua empresa.
+        </p>
+
+        <div class="warning">
+            ⚠️ Evite multas e problemas com fiscalização sanitária.
+        </div>
+
+        <a class="cta" href="https://wa.me/5554991674077" target="_blank">
+            Solicitar PMOC
+        </a>
 
     </div>
 </section>
@@ -237,10 +236,10 @@ footer {
 <section class="section" style="background:#f8fafc;">
     <h2>Por que escolher a Solumartin?</h2>
     <div class="cards">
-        <div class="card">✔️ Atendimento rápido via WhatsApp</div>
+        <div class="card">✔️ Atendimento rápido</div>
         <div class="card">✔️ Profissionais qualificados</div>
         <div class="card">✔️ Orçamento sem compromisso</div>
-        <div class="card">✔️ Atendimento em Caxias do Sul e região</div>
+        <div class="card">✔️ Caxias do Sul e região</div>
     </div>
 </section>
 
@@ -250,6 +249,7 @@ footer {
 </footer>
 
 <!-- BOTÕES FLUTUANTES -->
+
 <a class="instagram-float"
    href="https://www.instagram.com/arcondicionado_solumartin/"
    target="_blank">
