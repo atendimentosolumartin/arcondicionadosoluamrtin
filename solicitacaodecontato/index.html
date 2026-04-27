@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Solicitação de Contato | Solumartin</title>
+<title>Solicitar Contato | Solumartin</title>
 
 <style>
 *{
@@ -16,19 +16,17 @@ box-sizing:border-box;
 body{
 font-family:Arial, Helvetica, sans-serif;
 background:linear-gradient(135deg,#0a3d62,#0f5fa3);
-padding:30px;
-text-align:center;
-color:white;
+padding:25px;
 }
 
 .box{
 max-width:700px;
 margin:auto;
 background:white;
-color:#1f2933;
-padding:45px 30px;
 border-radius:18px;
+padding:40px;
 box-shadow:0 10px 30px rgba(0,0,0,0.18);
+text-align:center;
 }
 
 .logo{
@@ -37,93 +35,70 @@ margin-bottom:20px;
 }
 
 h1{
-font-size:34px;
 color:#0a3d62;
+font-size:34px;
 margin-bottom:15px;
 }
 
 p{
+color:#444;
 font-size:18px;
 margin-bottom:30px;
 line-height:1.5;
-color:#374151;
 }
 
-.buttons{
-display:flex;
-flex-direction:column;
-gap:18px;
-margin-bottom:35px;
+input, select{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #d1d5db;
+border-radius:10px;
+font-size:16px;
 }
 
 .btn{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:12px;
+width:100%;
 padding:18px;
-border-radius:14px;
-text-decoration:none;
+border:none;
+border-radius:12px;
 font-size:20px;
 font-weight:bold;
-color:white;
-transition:0.3s;
+cursor:pointer;
+text-decoration:none;
+display:block;
+margin-bottom:15px;
 }
 
-.btn:hover{
-transform:translateY(-3px);
-box-shadow:0 8px 20px rgba(0,0,0,0.15);
-}
-
-.whatsapp{
+.whats{
 background:#25d366;
+color:white;
 }
 
-.instagram{
+.insta{
 background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
-}
-
-.btn img{
-width:30px;
-height:30px;
-}
-
-.info{
-background:#f8fafc;
-padding:20px;
-border-radius:12px;
-margin-top:15px;
-margin-bottom:30px;
-font-size:16px;
-line-height:1.7;
+color:white;
 }
 
 .back{
-display:inline-block;
 background:#0a3d62;
 color:white;
-padding:14px 28px;
-text-decoration:none;
-border-radius:12px;
-font-weight:bold;
 }
 
-.back:hover{
-background:#08304d;
+.info{
+margin-top:20px;
+font-size:15px;
+color:#555;
+line-height:1.7;
 }
 
 @media(max-width:600px){
 
+.box{
+padding:25px;
+}
+
 h1{
 font-size:28px;
-}
-
-p{
-font-size:16px;
-}
-
-.btn{
-font-size:18px;
 }
 
 }
@@ -136,25 +111,35 @@ font-size:18px;
 
 <img src="../logo.png" class="logo">
 
-<h1>Solicitação de Contato</h1>
+<h1>Solicite seu Atendimento</h1>
 
 <p>
-Fale com a equipe <strong>Solumartin Climatização</strong> através de um dos canais abaixo e solicite orçamento rápido para instalação, manutenção, higienização ou PMOC.
+Preencha abaixo e fale rapidamente com nossa equipe especializada.
 </p>
 
-<div class="buttons">
+<input type="text" id="nome" placeholder="Seu nome">
 
-<a class="btn whatsapp" href="https://wa.me/5554991674077" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-WhatsApp
+<input type="text" id="telefone" placeholder="Seu telefone">
+
+<select id="servico">
+<option>Instalação</option>
+<option>Higienização</option>
+<option>Manutenção</option>
+<option>PMOC</option>
+<option>Orçamento</option>
+</select>
+
+<button class="btn whats" onclick="enviarWhatsapp()">
+Enviar no WhatsApp
+</button>
+
+<a class="btn insta" href="https://www.instagram.com/arcondicionado_solumartin/" target="_blank">
+Falar pelo Instagram
 </a>
 
-<a class="btn instagram" href="https://www.instagram.com/arcondicionado_solumartin/" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
-Instagram
+<a class="btn back" href="../index.html">
+Voltar ao Site
 </a>
-
-</div>
 
 <div class="info">
 📍 Caxias do Sul e Região<br>
@@ -162,11 +147,23 @@ Instagram
 📧 atendimento.solumartin@gmail.com
 </div>
 
-<a class="back" href="../index.html">
-Voltar ao Site
-</a>
-
 </div>
+
+<script>
+function enviarWhatsapp(){
+
+let nome = document.getElementById("nome").value;
+let telefone = document.getElementById("telefone").value;
+let servico = document.getElementById("servico").value;
+
+let msg = `Olá, meu nome é ${nome}. Telefone: ${telefone}. Tenho interesse em ${servico}.`;
+
+let url = "https://wa.me/5554991674077?text=" + encodeURIComponent(msg);
+
+window.open(url, "_blank");
+
+}
+</script>
 
 </body>
 </html>
