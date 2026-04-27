@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solicitação de Contato</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#f8fafc;
+text-align:center;
+padding:40px;
+}
+
+.box{
+max-width:600px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+h1{
+color:#0a3d62;
+}
+
+a{
+display:inline-block;
+margin-top:20px;
+background:#25d366;
+color:white;
+padding:14px 25px;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h1>Solicitação de Contato</h1>
+
+<p>Fale agora com nossa equipe especializada.</p>
+
+<a href="https://wa.me/5554991674077" target="_blank">
+Chamar no WhatsApp
+</a>
+
+</div>
+
+</body>
+</html>
