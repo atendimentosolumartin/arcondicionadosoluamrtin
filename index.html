@@ -23,6 +23,22 @@
   gtag('config', 'AW-18052167438');
 </script>
 
+<!-- EVENTO DE CONVERSÃO -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18052167438/WRcUCPLM3qMcEI7u-J9D',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 <style>
 body {
     margin: 0;
@@ -228,7 +244,6 @@ footer {
     </div>
 </section>
 
-<!-- SEÇÃO PMOC -->
 <section class="section">
     <div class="pmoc">
 
@@ -276,8 +291,10 @@ target="_blank">
 Instagram
 </a>
 
+<!-- BOTÃO WHATSAPP COM CONVERSÃO -->
 <a class="whatsapp-float"
 href="https://wa.me/5554991674077"
+onclick="return gtag_report_conversion('https://wa.me/5554991674077');"
 target="_blank">
 WhatsApp
 </a>
