@@ -3,301 +3,178 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- FORÇAR ATUALIZAÇÃO -->
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-
 <title>Ar Condicionado Solumartin | Caxias do Sul</title>
 
-<meta name="description" content="Instalação, higienização, manutenção, PMOC e venda de ar-condicionado em Caxias do Sul e região.">
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18052167438"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18052167438');
-</script>
-
-<!-- EVENTO DE CONVERSÃO -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18052167438/WRcUCPLM3qMcEI7u-J9D',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
-
 <style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #ffffff;
-    color: #1f2933;
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+body{font-family:Arial,Helvetica,sans-serif;color:#1f2933;background:#fff;}
+
+.navbar{
+position:sticky;top:0;z-index:1000;
+background:rgba(10,61,98,.95);
+backdrop-filter:blur(10px);
+display:flex;justify-content:center;gap:30px;
+padding:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+.navbar a{
+color:#fff;text-decoration:none;font-weight:600;
+transition:.3s;
+}
+.navbar a:hover{color:#f97316;}
+
+header{
+background:linear-gradient(135deg,#021526,#0a3d62,#0f5fa3);
+padding:30px 20px;
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+header::before{
+content:'';
+position:absolute;
+width:500px;height:500px;
+background:rgba(249,115,22,.15);
+border-radius:50%;
+top:-250px;right:-100px;
+filter:blur(80px);
+}
+header::after{
+content:'';
+position:absolute;
+width:400px;height:400px;
+background:rgba(255,255,255,.08);
+border-radius:50%;
+bottom:-200px;left:-100px;
+filter:blur(60px);
+}
+header img{
+max-width:420px;
+background:#fff;
+padding:15px 25px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+position:relative;
+z-index:2;
+}
+header p{color:#fff;margin-top:15px;position:relative;z-index:2;}
+
+.top-badge{
+display:inline-block;
+margin-top:15px;
+padding:12px 20px;
+border-radius:50px;
+background:rgba(255,255,255,.12);
+color:#fff;
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.2);
+position:relative;
+z-index:2;
 }
 
-header {
-    background: #0a3d62;
-    padding: 20px;
-    text-align: center;
+.hero{
+background:linear-gradient(to right,#0a3d62,#0f5fa3);
+color:#fff;
+padding:60px 20px;
+text-align:center;
 }
-
-header img {
-    max-width: 380px;
+.cta{
+background:#f97316;color:#fff;text-decoration:none;
+padding:14px 24px;border-radius:10px;font-weight:bold;
+display:inline-block;margin-top:15px;
 }
-
-header p {
-    color: white;
+.section{max-width:1100px;margin:auto;padding:60px 20px;}
+.section h2{text-align:center;color:#0a3d62;margin-bottom:30px;}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
 }
-
-.hero {
-    background: linear-gradient(to right, #0a3d62, #0f5fa3);
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
+.card{
+border:1px solid #e5e7eb;
+padding:25px;border-radius:12px;text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,.06);
 }
-
-.cta {
-    background: #f97316;
-    color: white;
-    padding: 14px 24px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.section {
-    padding: 50px 20px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.section h2 {
-    text-align: center;
-    color: #0a3d62;
-    margin-bottom: 30px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-}
-
-.card {
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 25px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-}
-
 .card img{
-    width:100%;
-    height:180px;
-    object-fit:cover;
-    border-radius:10px;
-    margin-bottom:15px;
+width:100%;height:180px;object-fit:cover;
+border-radius:10px;margin-bottom:15px;
 }
+.highlight{color:#16a34a;font-weight:bold;}
 
-.highlight {
-    color: #16a34a;
-    font-weight: bold;
+.pmoc{
+background:linear-gradient(to right,#0a3d62,#0f5fa3);
+color:#fff;text-align:center;border-radius:12px;padding:40px 20px;
 }
-
-/* PMOC */
-.pmoc {
-    background: linear-gradient(to right, #0a3d62, #0f5fa3);
-    color: white;
-    text-align: center;
-    border-radius: 12px;
-    padding: 40px 20px;
+.pmoc h2{
+display:inline-block;background:#fff;color:#000;
+padding:10px 18px;border-radius:8px;
 }
-
-/* TÍTULO PMOC AJUSTADO */
-.pmoc h2 {
-    color: #000000;
-    font-weight: 800;
-    background: #ffffff;
-    display: inline-block;
-    padding: 10px 18px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+.warning{
+background:#fee2e2;color:#b91c1c;
+padding:15px;border-radius:8px;
+max-width:700px;margin:20px auto;font-weight:bold;
 }
-
-.warning {
-    background: #fee2e2;
-    color: #b91c1c;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 20px auto;
-    max-width: 700px;
-    font-weight: bold;
-}
-
-footer {
-    background: #0a3d62;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-/* BOTÕES FLUTUANTES */
-
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25d366;
-    color: white;
-    padding: 14px 18px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.instagram-float {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
-    color: white;
-    padding: 14px 18px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
+footer{
+background:#0a3d62;color:#fff;text-align:center;padding:25px;
 }
 </style>
 </head>
-
 <body>
 
+<nav class="navbar">
+<a href="#servicos">Serviços</a>
+<a href="#pmoc">PMOC</a>
+<a href="#vantagens">Vantagens</a>
+<a href="/solicitacaodecontato">Orçamento</a>
+</nav>
+
 <header>
-    <img src="logo.png">
-    <p>Instalação • Higienização • Manutenção • PMOC • Venda</p>
+<img src="logo.png" alt="Solumartin">
+<p>Instalação • Higienização • Manutenção • PMOC • Venda</p>
+<div class="top-badge">
+✔ Atendimento Residencial e Empresarial • PMOC • Instalação Premium
+</div>
 </header>
 
 <section class="hero">
-    <h1>Ar-Condicionado em Caxias do Sul</h1>
-    <p>Atendimento profissional para residências e empresas</p>
-    <a class="cta" href="/solicitacaodecontato">
-        Solicitar orçamento
-    </a>
+<h1>Ar-Condicionado em Caxias do Sul</h1>
+<p>Atendimento profissional para residências e empresas</p>
+<a class="cta" href="/solicitacaodecontato">Solicitar orçamento</a>
 </section>
 
-<section class="section">
-    <h2>Nossos Serviços</h2>
-    <div class="cards">
-
-        <div class="card">
-            <img src="instalacao.jpg">
-            <h3>Instalação</h3>
-            <p>Instalação profissional e segura.</p>
-            <p class="highlight">Mais eficiência</p>
-            <a class="cta" href="/solicitacaodecontato">
-                Solicitar instalação
-            </a>
-        </div>
-
-        <div class="card">
-            <img src="higienizacao.jpg">
-            <h3>Higienização</h3>
-            <p>Melhora a qualidade do ar.</p>
-            <p class="highlight">Mais saúde</p>
-            <a class="cta" href="/solicitacaodecontato">
-                Agendar higienização
-            </a>
-        </div>
-
-        <div class="card">
-            <img src="manutencao.jpg">
-            <h3>Manutenção</h3>
-            <p>Manutenção preventiva e corretiva do equipamento.</p>
-            <p class="highlight">Mais segurança e durabilidade</p>
-            <a class="cta" href="/solicitacaodecontato">
-                Solicitar manutenção
-            </a>
-        </div>
-
-        <div class="card">
-            <img src="venda.jpg">
-            <h3>Venda</h3>
-            <p>Equipamentos modernos e econômicos.</p>
-            <p class="highlight">Mais economia</p>
-            <a class="cta" href="/solicitacaodecontato">
-                Ver modelos
-            </a>
-        </div>
-
-    </div>
+<section class="section" id="servicos">
+<h2>Nossos Serviços</h2>
+<div class="cards">
+<div class="card"><h3>Instalação</h3></div>
+<div class="card"><h3>Higienização</h3></div>
+<div class="card"><h3>Manutenção</h3></div>
+<div class="card"><h3>Venda</h3></div>
+</div>
 </section>
 
-<section class="section">
-    <div class="pmoc">
-
-        <h2>PMOC – Obrigatório por Lei</h2>
-
-        <p>
-            Empresas com sistemas de ar-condicionado são obrigadas a manter
-            o PMOC conforme normas da ANVISA (Lei 13.589/2018).
-        </p>
-
-        <p>
-            A Solumartin realiza implantação completa, manutenção e controle
-            do PMOC para sua empresa.
-        </p>
-
-        <div class="warning">
-            ⚠️ Evite multas e problemas com fiscalização sanitária.
-        </div>
-
-        <a class="cta" href="/solicitacaodecontato">
-            Solicitar PMOC
-        </a>
-
-    </div>
+<section class="section" id="pmoc">
+<div class="pmoc">
+<h2>PMOC – Obrigatório por Lei</h2>
+<p style="margin-top:20px;">Empresas com sistemas de climatização devem manter PMOC conforme legislação vigente.</p>
+<div class="warning">⚠ Evite multas e fiscalizações.</div>
+<a class="cta" href="/solicitacaodecontato">Solicitar PMOC</a>
+</div>
 </section>
 
-<section class="section" style="background:#f8fafc;">
-    <h2>Por que escolher a Solumartin?</h2>
-    <div class="cards">
-        <div class="card">✔️ Atendimento rápido</div>
-        <div class="card">✔️ Profissionais qualificados</div>
-        <div class="card">✔️ Orçamento sem compromisso</div>
-        <div class="card">✔️ Caxias do Sul e região</div>
-    </div>
+<section class="section" id="vantagens">
+<h2>Por que escolher a Solumartin?</h2>
+<div class="cards">
+<div class="card">✔ Atendimento rápido</div>
+<div class="card">✔ Profissionais qualificados</div>
+<div class="card">✔ Orçamento sem compromisso</div>
+<div class="card">✔ Caxias do Sul e região</div>
+</div>
 </section>
 
 <footer>
-    <p><strong>Solumartin Climatização</strong></p>
-    <p>Caxias do Sul e região</p>
+<strong>Solumartin Climatização</strong><br>
+Caxias do Sul e Região
 </footer>
-
-<a class="instagram-float"
-href="https://www.instagram.com/arcondicionado_solumartin/"
-target="_blank">
-Instagram
-</a>
-
-<!-- BOTÃO WHATSAPP COM CONVERSÃO -->
-<a class="whatsapp-float"
-href="https://wa.me/5554991674077"
-onclick="return gtag_report_conversion('https://wa.me/5554991674077');"
-target="_blank">
-WhatsApp
-</a>
 
 </body>
 </html>
